@@ -536,6 +536,125 @@ section {
     color: var(--secondary-color);
 }
 
+/* Education & Experience */
+.education,
+.experience {
+    background-color: var(--section-bg);
+}
+
+.subsection-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2.5rem 0 1.5rem;
+    color: var(--text-color);
+}
+
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    border-left: 4px solid var(--primary-color);
+}
+
+.timeline-date {
+    flex-shrink: 0;
+    font-weight: 600;
+    color: var(--primary-color);
+    min-width: 100px;
+}
+
+.timeline-content h3 {
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.timeline-role {
+    font-weight: 500;
+    color: var(--secondary-color);
+    margin-bottom: 0.25rem;
+}
+
+.transcript-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.transcript-semester {
+    background-color: var(--bg-color);
+    padding: 1.25rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.transcript-semester h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+.transcript-semester ul {
+    list-style: none;
+}
+
+.transcript-semester li {
+    padding: 0.35rem 0;
+    font-size: 0.95rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.extra-skills,
+.languages {
+    margin-top: 1.5rem;
+}
+
+.extra-skills h4,
+.languages h4 {
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-tags span {
+    background-color: var(--section-bg);
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid var(--border-color);
+}
+
+.languages ul {
+    list-style: none;
+}
+
+.languages li {
+    margin-bottom: 0.5rem;
+}
+
+.hardware-skills {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
 /* Contact Section */
 .contact-content {
     display: flex;
@@ -766,5 +885,14 @@ footer {
 
     .stat {
         flex: 1 1 45%;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .transcript-grid {
+        grid-template-columns: 1fr;
     }
 }
